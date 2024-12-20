@@ -1,0 +1,278 @@
+/* Existing CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background: linear-gradient(135deg, #2c3e50, #34495e); Gradient background */
+  background-color: #FFFFFF;
+ /* background-image: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%); */
+  color: white;
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Header Styling */
+.header, h1 {
+  color: white;
+  text-align: center;
+  margin: 40px 10px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Form Styling */
+.form-input,
+.form-button {
+  padding: 10px;
+  font-size: 18px;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+
+.form-input {
+  width: 350px;
+  border: 2px solid #7f8c8d;
+  background: linear-gradient(135deg, #2c3e50, #34495e); 
+  color: white;
+}
+
+.form-input:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 8px rgba(52, 152, 219, 0.8);
+}
+
+.form-button {
+  width: 120px;
+  color: #fff;
+  cursor: pointer;
+  margin-left: 15px;
+  border: 2px solid #7f8c8d;
+  background: linear-gradient(135deg, #2c3e50, #34495e); 
+  transition: all 0.3s ease-in-out;
+}
+
+.form-button:hover {
+  background: linear-gradient(135deg, #2c3e50, #34495e); 
+  border-color: #3498db;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* Todo List Styling */
+.todo-li {
+  margin: 10px;
+  margin-right: 30px;
+  background: white;  
+  font-size: 15px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  transition: transform 0.3s ease;
+}
+
+.todo-li:hover {
+  transform: scale(1.02);
+}
+
+.todo-ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+}
+
+/* List Item */
+.li-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #7f8c8d;
+  padding: 12px;
+  border-radius: 10px;
+  background: #970747 !important;   
+  transition: all 0.3s ease;
+}
+
+.li-input {
+  width: 300px;
+  height: 40px;
+  font-size: 18px;
+  border: 2px solid #7f8c8d;
+  padding-left: 10px;
+  font-weight: 400;
+  background: #970747;  
+  color: white;
+  border-radius: 5px;
+}
+
+.li-input:focus {
+  border-color: #2ecc71;
+  box-shadow: 0 0 8px rgba(46, 204, 113, 0.8);
+}
+
+/* Buttons */
+.button-complete,
+.button-save,
+.button-delete,
+.button-edit {
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  font-size: 15px;
+  margin-left: 10px;
+  color: white;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.button-complete {
+  background-color: #2ecc71;
+}
+
+.button-complete:hover {
+  background-color: #27ae60;
+  transform: scale(1.1);
+}
+
+.button-delete {
+  background-color: #e74c3c;
+}
+
+.button-delete:hover {
+  background-color: #c0392b;
+  transform: scale(1.1);
+}
+
+.button-save {
+  background-color: #9b59b6;
+}
+
+.button-save:hover {
+  background-color: #8e44ad;
+  transform: scale(1.1);
+}
+
+.button-edit {
+  background-color: #3498db;
+}
+
+.button-edit:hover {
+  background-color: #2980b9;
+  transform: scale(1.1);
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+  color: #bdc3c7;
+}
+
+.text-complete,
+.text-edit,
+.text-delete,
+.text-save {
+  padding: 5px;
+  font-weight: 500;
+}
+
+input:focus,
+button:focus {
+  outline: none;
+}
+
+/* ------------------ Responsive CSS ------------------ */
+
+/* Small Screens (Max Width 600px) */
+@media (max-width: 600px) {
+  .form-input {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .form-button {
+    width: 100px;
+    font-size: 14px;
+  }
+
+  .li-input {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .button-complete,
+  .button-save,
+  .button-delete,
+  .button-edit {
+    width: 80px;
+    height: 35px;
+    font-size: 12px;
+    margin-left: 5px;
+  }
+}
+
+/* Medium Screens (601px to 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+  .form-input {
+    width: 70%;
+    font-size: 17px;
+  }
+
+  .form-button {
+    width: 110px;
+    font-size: 16px;
+  }
+
+  .li-input {
+    width: 250px;
+    font-size: 16px;
+  }
+
+  .button-complete,
+  .button-save,
+  .button-delete,
+  .button-edit {
+    width: 90px;
+    font-size: 14px;
+  }
+}
+
+/* Large Screens (Above 900px) */
+@media (min-width: 901px) {
+  .form-input {
+    width: 350px;
+    font-size: 18px;
+  }
+
+  .form-button {
+    width: 120px;
+    font-size: 18px;
+  }
+
+  .li-input {
+    width: 300px;
+    font-size: 18px;
+  }
+
+  .button-complete,
+  .button-save,
+  .button-delete,
+  .button-edit {
+    width: 100px;
+    font-size: 15px;
+  }
+}
+.timestamp {
+  font-size: 0.8rem;
+  color: #888;
+  margin-top: 5px;
+}

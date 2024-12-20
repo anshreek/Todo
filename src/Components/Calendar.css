@@ -1,0 +1,113 @@
+h1.text-center {
+  color: #2c3e50;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+.react-datepicker-wrapper {
+  display: inline-block;
+  width: 100%;
+}
+.react-datepicker__input-container input {
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.react-datepicker__input-container input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+.card {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.card-title {
+  font-size: 1.25rem;
+  color: #495057;
+  font-weight: 600;
+}
+textarea.form-control {
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+textarea.form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+.btn {
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.btn-primary:hover {
+  background-color: #0056b3;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+.btn-secondary {
+  background-color: #6c757d;
+  border: none;
+}
+.btn-secondary:hover {
+  background-color: #5a6268;
+}
+.btn-danger {
+  background-color: #dc3545;
+  border: none;
+}
+.btn-danger:hover {
+  background-color: #c82333;
+}
+.list-group {
+  margin-top: 20px;
+}
+.list-group-item {
+  border: none;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+.list-group-item:hover {
+  transform: scale(1.02);
+}
+.list-group-item strong {
+  color: #007bff;
+  font-weight: 600;
+}
+.list-group-item.text-center {
+  font-size: 1rem;
+  color: #6c757d;
+}
+.container {
+  padding: 20px;
+}
+.card {
+  border-radius: 10px;
+}
+img {
+  border-radius: 10px;
+}
+textarea {
+  resize: none;
+}
+.list-group-item {
+  transition: transform 0.2s ease-in-out;
+}
+.list-group-item:hover {
+  transform: scale(1.02);
+}
